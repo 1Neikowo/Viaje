@@ -32,7 +32,13 @@ public class Viaje {
 	public static int pedirNumero() {
 		Scanner tc = new Scanner(System.in);
 		try {
-			return tc.nextInt();
+			int ans = tc.nextInt();
+			if (ans > 0) {
+				return ans;
+			}else {
+				System.out.println("Ingrese un número válido");
+				return pedirNumero();
+			}
 		}catch (Exception e) {
 			System.out.println("Ingrese un número válido");
 			return pedirNumero();
