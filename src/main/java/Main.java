@@ -1,8 +1,8 @@
 public class Main {
 
-	public void main() {
-		// TODO - implement Main.main
-		throw new UnsupportedOperationException();
+	public static void main(String[] args) {
+		Viaje viaje = new Viaje();
+		viaje.viajar();
 	}
 
 }

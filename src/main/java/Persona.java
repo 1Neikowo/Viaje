@@ -1,14 +1,12 @@
 public class Persona {
-
 	private String nombre;
 
 	public String getNombre() {
 		return this.nombre;
 	}
 
-	public void setNombre() {
-		// TODO - implement Persona.setNombre
-		throw new UnsupportedOperationException();
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 
 }
